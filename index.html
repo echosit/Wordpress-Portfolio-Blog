@@ -7,30 +7,32 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Roboto&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <!---------- Menu ----------->
-    <nav>
+    <nav class="menu website-width">
         <!-- Brand -->
-        <div id="brand">
+        <div class="brand">
             <a href="#">
                 <p>Echo Sit</p>
             </a>
         </div>
         <!-- Links -->
-        <ul>
-            <li>
+        <ul class="links">
+            <li class="links-padding">
                 <a class="active" href="index.html">Home</a>
             </li>
-            <li>
+            <li class="links-padding">
                 <a href="portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li class="links-padding">
                 <a href="blog.html">Blog</a>
             </li>
-            <li>
+            <li class="links-padding">
                 <a href="about.html">About</a>
             </li>
             <li>
@@ -40,70 +42,70 @@
             </li>
         </ul>
         <!-- Socials -->
-        <div class="socials">
+        <div>
             <a href="https://github.com/echosit">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github menu-socials"></i>
             </a>
             <a href="https://www.linkedin.com/in/echosit">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin menu-socials"></i>
             </a>
         </div>
     </nav>
     <!---------- Introduction Section ----------->
-    <section>
-        <p>👋</p>
-        <p>Hi, my name is Echo.</p>
-        <h1>I am a JavaScript Developer based in Belmont, CA.</h1>
+    <section class="intro-section">
+        <p class="emoji">👋</p>
+        <p class="home-subtitle">Hi, my name is Echo.</p>
+        <h1 class="home-title">I am a JavaScript Developer based in Belmont, CA.</h1>
         <a href="#project">
-            <i class="far fa-arrow-alt-circle-down"></i>
+            <i class="far fa-arrow-alt-circle-down arrow"></i>
         </a>
     </section>
     <!---------- Projects Section ----------->
     <section id="project">
         <!-- Title and Link -->
-        <div>
+        <div class="home-heading website-width">
             <h2>Projects</h2>
-            <a href="portfolio.html">View All</a>
+            <a class="view-all" href="portfolio.html">View All</a>
         </div>
         <!-- Project Images -->
-        <div>
-            <img src="" alt="portfolio image"/>
-            <img src="" alt="portfolio image"/>
+        <div class="home-project">
+            <img class="home-project-img" src="img/img1.jpg" alt="portfolio image"/>
+            <img class="home-project-img" src="img/img1.jpg" alt="portfolio image"/>
         </div>
     </section>
    <!---------- About Section ----------->
-   <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+   <section class="home-about website-width">
+        <p class="home-about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <a href="about.html">
             <button>Learn More</button>
         </a>
    </section>
    <!---------- Blog Post Section ----------->
-   <section>
+   <section class="website-width">
         <!-- Title and Link -->
-        <div>
+        <div class="home-heading">
             <h2>Blog</h2>
-            <a href="blog.html">View All</a>
+            <a class="view-all" href="blog.html">View All</a>
         </div>
         <!-- Blog Post Previews -->
-        <div>
+        <div class="home-blog">
             <!-- Blog Post Preview -->
-            <a href="blogpost.html"> 
-                <img src="" alt="blog post thumbnail"/>
+            <a class="home-blog-preview" href="blogpost.html"> 
+                <img class="home-blog-img" src="img/img2.jpg" alt="blog post thumbnail"/>
                 <p><span>ReactJS</span> | March 31, 2021</p>
                 <h3>Blog Post Title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </a>
             <!-- Blog Post Preview -->
-            <a href="blogpost.html">
-                <img src="" alt="blog post thumbnail"/>
+            <a class="home-blog-preview" href="blogpost.html">
+                <img class="home-blog-img" src="img/img2.jpg" alt="blog post thumbnail"/>
                 <p><span>ReactJS</span> | March 31, 2021</p>
                 <h3>Blog Post Title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </a>
             <!-- Blog Post Preview -->
-            <a href="blogpost.html">
-                <img src="" alt="blog post thumbnail"/>
+            <a class="home-blog-preview" href="blogpost.html">
+                <img class="home-blog-img" src="img/img2.jpg" alt="blog post thumbnail"/>
                 <p><span>ReactJS</span> | March 31, 2021</p>
                 <h3>Blog Post Title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -111,13 +113,13 @@
         </div>
    </section>
    <!---------- Footer ----------->
-   <footer>
+   <footer class="website-width">
         <!-- footer top -->
-        <div>
+        <div class="footer-top">
             <!-- footer left -->
-            <div>
+            <div class="footer-top-section">
                 <a href="#">
-                    <p>Echo Sit</p>
+                    <p class="brand">Echo Sit</p>
                 </a>
                 <p>A JavaScript Developer based in Belmont, CA.</p>
                 <a href="https://github.com/echosit">
@@ -130,24 +132,24 @@
                 </a>
             </div>
             <!-- footer right -->
-            <div>
-                <p>Explore</p>
+            <div class="footer-top-section">
+                <p class="bold">Explore</p>
                 <a href="home.html">
-                    <p>Home</p>
+                    Home
                 </a>
                 <a href="portfolio.html">
-                    <p>Portfolio</p>
+                    Portfolio
                 </a>
                 <a href="blog.html">
-                    <p>Blog</p>
+                    Blog
                 </a>
                 <a href="about.html">
-                    <p>About</p>
+                    About
                 </a>
             </div>
         </div>
         <!-- footer bottom -->
-        <p>Coded With Love By Echo. Updated March 2021.</p>
+        <p class="attribute">Coded With Love By Echo. Updated March 2021.</p>
    </footer>
 </body>
 </html>
