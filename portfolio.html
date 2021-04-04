@@ -7,31 +7,32 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Roboto&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <!---------- Menu ----------->
-    <nav>
+    <nav class="menu website-width">
         <!-- Brand -->
-        <div id="brand">
-            <a href="#">
+        <div>
+            <a class="brand" href="index.html">
                 <p>Echo Sit</p>
             </a>
         </div>
         <!-- Links -->
-        <ul>
-            <li>
+        <ul class="links">
+            <li class="links-padding">
                 <a class="active" href="index.html">Home</a>
             </li>
-            <li>
+            <li class="links-padding">
                 <a href="portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li class="links-padding">
                 <a href="blog.html">Blog</a>
             </li>
-            <li>
+            <li class="links-padding">
                 <a href="about.html">About</a>
             </li>
             <li>
@@ -41,87 +42,90 @@
             </li>
         </ul>
         <!-- Socials -->
-        <div class="socials">
+        <div>
             <a href="https://github.com/echosit">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github menu-socials github-padding"></i>
             </a>
             <a href="https://www.linkedin.com/in/echosit">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin menu-socials"></i>
             </a>
         </div>
     </nav>
     <!---------- Title ----------->
-    <h2>Projects</h2>
+    <h2 class="page-heading">Projects</h2>
     <!---------- Projects Section ----------->
     <section>
         <!-- Project -->
-        <div>
+        <div class="project">
             <!-- Project Description -->
-            <div>
-                <!-- Info -->
-                <p>Let’s Chat</p>
-                <h2>Messaging Web Application</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <!-- Technologies -->
-                <div>
-                    <p>ReactJS</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>HTML</p>
+            <div class="project-container">
+                <div class="project-description">
+                    <!-- Info -->
+                    <p class="project-name">Let’s Chat</p>
+                    <h2>Messaging Web Application</h2>
+                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <!-- Technologies -->
+                    <div class="technologies">
+                        <p class="tool">ReactJS</p>
+                        <p class="tool">CSS</p>
+                        <p class="tool">JavaScript</p>
+                        <p class="tool">HTML</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <button class="launch-btn">Launch Site</button>
+                        </a>
+                        <a href="#">
+                            <button>Source Code</button>
+                        </a>
+                    </div>
                 </div>
-                <a href="#">
-                    <button>Launch Site</button>
-                </a>
-                <a href="#">
-                    <button>Source Code</button>
-                </a>
             </div>
             <!-- Project Image -->
             <div>
-                <img src="" alt="project image"/>
+                <img class="project-container" src="img/portfolio.png" alt="project image"/>
             </div>
         </div>
     </section>
 
-
    <!---------- Footer ----------->
-   <footer>
-        <!-- footer top -->
-        <div>
-            <!-- footer left -->
-            <div>
-                <a href="#">
-                    <p>Echo Sit</p>
-                </a>
-                <p>A JavaScript Developer based in Belmont, CA.</p>
-                <a href="https://github.com/echosit">
-                    <i class="fab fa-github"></i>
-                    <p>Github</p>
-                </a>
-                <a href="https://www.linkedin.com/in/echosit">
-                    <i class="fab fa-linkedin"></i>
-                    <p>LinkedIn</p>
-                </a>
-            </div>
-            <!-- footer right -->
-            <div>
-                <p>Explore</p>
-                <a href="home.html">
-                    <p>Home</p>
-                </a>
-                <a href="portfolio.html">
-                    <p>Portfolio</p>
-                </a>
-                <a href="blog.html">
-                    <p>Blog</p>
-                </a>
-                <a href="about.html">
-                    <p>About</p>
-                </a>
-            </div>
+   <footer class="website-width">
+    <!-- footer top -->
+    <div class="footer-top">
+        <!-- footer left -->
+        <div class="footer-top-section">
+            <a href="#">
+                <p class="brand">Echo Sit</p>
+            </a>
+            <p class="footer-subtitle">A JavaScript Developer based in Belmont, CA.</p>
+            <a class="footer-socials" href="https://github.com/echosit">
+                <i class="fab fa-github footer-social"></i>
+                <p>Github</p>
+            </a>
+            <a class="footer-socials" href="https://www.linkedin.com/in/echosit">
+                <i class="fab fa-linkedin footer-social"></i>
+                <p>LinkedIn</p>
+            </a>
         </div>
-        <!-- footer bottom -->
-        <p>Coded With Love By Echo. Updated March 2021.</p>
-   </footer>
+        <!-- footer right -->
+        <div class="footer-top-section explore-section">
+            <p class="bold">Explore</p>
+            <a class="footer-links" href="home.html">
+                Home
+            </a>
+            <a class="footer-links" href="portfolio.html">
+                Portfolio
+            </a>
+            <a class="footer-links" href="blog.html">
+                Blog
+            </a>
+            <a class="footer-links" href="about.html">
+                About
+            </a>
+        </div>
+    </div>
+    <!-- footer bottom -->
+    <p class="attribute">Coded With Love By Echo. Updated March 2021.</p>
+</footer>
 </body>
 </html>
