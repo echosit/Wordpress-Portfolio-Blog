@@ -46,6 +46,7 @@ button {
 }
 .page-heading {
     text-align: center;
+    padding: 20px 0;
 }
 /**************** Menu ****************/
 .menu {
@@ -74,10 +75,11 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .view-all {
     position: relative;
-    top: 34px;
+    top: 12px;
     color: #004E96;
     font-size: 20px;
 }
@@ -88,18 +90,25 @@ li {
     max-width: 600px;
 }
 .emoji {
-    font-size: 45px;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .home-subtitle {
-    font-size: 30px;
-    color: #474747;
+    font-size: 25px;
+    color: #717171;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .home-title {
-    font-size: 45px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 .arrow {
     font-size: 80px;
-    color: #C4C4C4;
+    color: #DCDBDB;
+    margin-bottom: 40px;
 }
 /* Projects Section */
 .home-project {
@@ -118,6 +127,7 @@ li {
 .home-about-text {
     color: #474747;
     font-size: 25px;
+    padding-bottom: 20px;
 }
 /* Blog Section */
 .home-blog {
@@ -133,14 +143,19 @@ li {
 .home-blog-title {
     font-size: 25px;
     font-weight: normal;
+    margin: 0;
 }
 .home-blog-text {
     color: #474747;
     font-size: 20px;
+    margin: 0;
+    margin-top: 9px;
+    margin-bottom: 20px;
 }
 .home-blog-date {
     color: #717171;
     font-size: 17px;
+    margin: 9px 0;
 }
 /**************** Portfolio Page ****************/
 .project-container {
@@ -164,7 +179,10 @@ li {
     justify-content: center;
 }
 .project-description {
-    padding: 10px;
+    padding: 0 10%;
+}
+.project-title {
+    font-size: 40px;
 }
 .project-name {
     font-size: 20px;
@@ -174,14 +192,12 @@ li {
 .project-text {
     font-size: 20px;
     color: #474747;
-    margin: 0;
-}
-.technologies {
+    margin: 10px 0;
 }
 .tool {
     font-size: 20px;
     color: #717171;
-    border: 2px solid #717171;
+    border: 1px solid #717171;
     border-radius: 0.3rem;
     padding: 3px 22px;
     float: left;
@@ -189,21 +205,15 @@ li {
 }
 .project-links {
     clear: both;
+    padding-top: 5px;
 }
 .launch-btn {
+    margin-top: 10px;
     margin-right: 7px;
     color: #1F1F1F;
     border: 5px solid #1F1F1F;
 }
 /**************** Blog Page Section ****************/
-/* Blog Preview Top */
-.blog-img-top {
-    width: 65%;
-    float: left;
-}
-.blog-title-top {
-    font-size: 30px;
-}
 /* Blog Preview Bottom */
 .blog {
     display: flex;
@@ -213,21 +223,6 @@ li {
 .blog-preview {
     width: 48.5%
 }
-.blog-img {
-    width: 100%
-}
-.blog-title {
-    font-size: 25px;
-    font-weight: normal;
-}
-.blog-text {
-    color: #474747;
-    font-size: 20px;
-}
-.blog-date {
-    color: #717171;
-    font-size: 17px;
-}
 /* Blog Index */
 .page-index {
     text-align: center;
@@ -236,7 +231,9 @@ li {
 /**************** About Page Section ****************/
 .about-text {
     font-size: 20px;
+    max-width: 700px;
     color: #474747;
+    margin: auto;
 }
 /**************** Blog Post Page Section ****************/
 .post {
@@ -244,6 +241,9 @@ li {
 }
 .post-date {
     text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 16px;
 }
 .post-img {
     display: block;
@@ -251,12 +251,17 @@ li {
     margin-right: auto;
     max-width: 700px;
     width: 100%;
+    margin-bottom: 20px;
 }
 .post-content {
     max-width: 700px;
     margin: auto;
     font-size: 20px;
     color: #474747;
+    margin-bottom: 40px;
+}
+.related-content {
+    margin-bottom: 10px;
 }
 /**************** 404 Page Section ****************/
 .error-text {
@@ -264,9 +269,13 @@ li {
     width: 100%;
     font-size: 20px;
     color: #474747;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 10px;
 }
 .error-img {
+    width: 100%;
+    max-width: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -275,6 +284,7 @@ li {
 .footer-top {
     display: flex;
     width: 100%;
+    margin-top: 40px;
 }
 .footer-top-section {
     width: 50%;
@@ -284,7 +294,7 @@ li {
 }
 .footer-social {
     float: left;
-    padding-right: 10px;
+    padding-right: 8px;
     position: relative;
     top: 2px;
 }
@@ -294,15 +304,63 @@ li {
     font-size: 20px;
 }
 .footer-subtitle {
-    color: #717171;
+    color: #444444;
     font-size: 20px;
+    width: 95%;
 }
 .footer-links {
-    color: #474747;
-    padding-bottom: 10px;
+    padding-bottom: 17px;
 }
 .attribute {
     text-align: center;
     color: #717171;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 1026px) {
+/**************** Portfolio ****************/ 
+.project {
+    display: flex;
+    flex-direction: column;
+}
+.project-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 0;
+    float: left;
+    height: auto;
+}
+.project-img {
+    height: auto;
+}
+.project-order {
+    order: -1;
+}
+.project-description-container {
+    height: auto;
+    position: relative;
+}
+.project-description {
+    padding: 20px;
+}
+}
+@media only screen and (max-width: 700px) {
+/**************** Homepage ****************/   
+/* Home Project Image */
+.home-project-img {
+    max-width: 100%;
+}
+/* Home Blog Preview */
+.home-blog {
+    flex-direction: column;
+    justify-content: center;
+}
+.home-blog-preview {
+    width: 100%;
+}
+/**************** Blog ****************/ 
+.blog-preview {
+    width: 100%
+}
+}
+ 
