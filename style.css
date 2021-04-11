@@ -63,12 +63,103 @@ li {
 .links-padding {
     padding-right: 40px; 
 }
-.menu-socials {
+.menu-icons {
     padding-top: 20px;
     font-size: 25px;
 }
 .github-padding {
     padding-right: 10px;
+}
+/* Search Bar */
+.menu-input {
+    display: inline-block;
+    height: 48px;
+    max-width: 500px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #717171;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+    position: relative;
+    bottom: 20px;
+}
+.menu-input:focus, .menu-input:hover {
+    width: 195px;
+    border-bottom: 4px solid #004E96;
+}
+.search-icon {
+    position: relative;
+    bottom: 13px;
+}
+/**************** Slide Out Menu ****************/
+.slide-out-menu {
+    display: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+/* Navbar Top */
+.slide-out-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+/* All Links */
+.slide-links {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    background-color: #004E96;
+    opacity: 0;
+}
+.slide-link {
+    margin-bottom: 35px;
+}
+.slide-menu-link {
+    color: white;
+    font-size: 23px;
+}
+/* Socials */
+.slide-menu-socials {
+    font-size: 45px;
+    padding-top: 20px;
+}
+.slide-menu-github {
+    padding-right: 17px;
+}
+/* Input */
+.slide-search {
+    display: flex;
+    justify-content: center;
+}
+.slide-search-icon {
+    position: relative;
+    top: 29px;
+    left: 10px;
+}
+.slide-input {
+    height: 48px;
+    max-width: 500px;
+    width: 195px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid white;
+    color: white;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+}
+.slide-input:focus, .slide-input:hover {
+    width: 70%;
+}
+input[type="text"]{
+    font-size: 20px;
+    text-align: center;
 }
 /**************** Home Page Section ****************/
 .home-heading {
@@ -318,6 +409,13 @@ li {
 }
 
 @media only screen and (max-width: 1026px) {
+/**************** Menus ****************/
+.menu {
+    display: none;
+}
+.slide-out-menu {
+    display: inline-block;
+}
 /**************** Portfolio ****************/ 
 .project {
     display: flex;
