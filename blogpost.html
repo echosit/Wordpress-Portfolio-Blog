@@ -22,34 +22,78 @@
             </a>
         </div>
         <!-- Links -->
-        <ul class="links">
+        <ul class="links" onclick="menuActive(event)">
             <li class="links-padding">
-                <a class="active" href="index.html">Home</a>
+                <a class="active menu-link" href="index.html">Home</a>
             </li>
             <li class="links-padding">
-                <a href="portfolio.html">Portfolio</a>
+                <a class="menu-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="links-padding">
-                <a href="blog.html">Blog</a>
+                <a class="menu-link" href="blog.html">Blog</a>
             </li>
             <li class="links-padding">
-                <a href="about.html">About</a>
+                <a class="menu-link" href="about.html">About</a>
             </li>
             <li>
-                <div id="search-icon">
-                    <i class="fas fa-search"></i>
-                </div>
+                <input class="menu-input" type="text"/> 
+                <i class="fas fa-search search-icon"></i>
             </li>
         </ul>
         <!-- Socials -->
         <div>
             <a href="https://github.com/echosit">
-                <i class="fab fa-github menu-socials github-padding"></i>
+                <i class="fab fa-github menu-icons github-padding"></i>
             </a>
             <a href="https://www.linkedin.com/in/echosit">
-                <i class="fab fa-linkedin menu-socials"></i>
+                <i class="fab fa-linkedin menu-icons"></i>
             </a>
         </div>
+    </nav>
+    <!---------- Slide Out Menu ----------->
+    <nav class="slide-out-menu">
+        <div class="slide-out-top website-width">
+            <!-- Brand -->
+            <div>
+                <a class="brand" href="index.html">
+                    <p>Echo Sit</p>
+                </a>
+            </div>
+            <!-- Menu Icon -->
+            <div>
+                <i class="fas fa-bars slide-menu"></i>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="slide-links">
+            <li class="slide-link">
+                <a class="active slide-menu-link" href="index.html">Home</a>
+            </li>
+            <li class="slide-link">
+                <a class="slide-menu-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="slide-link">
+                <a class="slide-menu-link" href="blog.html">Blog</a>
+            </li>
+            <li class="slide-link">
+                <a class="slide-menu-link" href="about.html">About</a>
+            </li>
+            <li class="slide-link slide-search">
+                <input class="slide-input" type="text"/> 
+                <div>
+                    <i class="fas fa-search slide-menu-link slide-search-icon"></i>
+                </div>
+            </li>
+            <!-- Socials -->
+            <div>
+                <a href="https://github.com/echosit">
+                    <i class="fab fa-github slide-menu-socials slide-menu-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/echosit">
+                    <i class="fab fa-linkedin slide-menu-socials"></i>
+                </a>
+            </div>
+        </ul>
     </nav>
     <!---------- Title ----------->
     <div class="website-width">
